@@ -38,7 +38,7 @@ public class Hooks extends MainClass{
         String fileName = format.format(dateNow) + ".png";
         File screenshot = ((TakesScreenshot) main.driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileHandler.copy(screenshot, new File(System.getProperty("user.dir") + "/src/main/resources/screenshots//screenshot" + fileName));
+            FileHandler.copy(screenshot, new File(System.getProperty("user.dir") + "/src/main/resources/screenshots/screenshot" + fileName));
         } catch (IOException e) {
             e.printStackTrace();
         }
